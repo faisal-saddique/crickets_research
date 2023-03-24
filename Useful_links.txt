@@ -1,0 +1,7 @@
+https://jayconsystems.com/blog/understanding-a-gas-sensor
+
+a value of 47k is recommended for RL
+
+https://www.youtube.com/watch?v=gnE4v-PcYKQ
+
+attaching different sensors to raspberry pi
