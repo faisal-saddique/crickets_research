@@ -9,7 +9,7 @@ from sensirion_i2c_scd import Scd4xI2cDevice
 
 # Connect to the I²C 1 port
 with LinuxI2cTransceiver('/dev/i2c-1') as i2c_transceiver:
-    # Create SCD4x device with I2C address 0x34
+    # Please refer to instructions in scd40dr2_files\README.md to find the address of your sensor
     scd4x = Scd4xI2cDevice(I2cConnection(i2c_transceiver, 0x34))
 
     # Make sure measurement is stopped, else we can't read serial number or
