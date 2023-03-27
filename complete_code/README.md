@@ -1,0 +1,1 @@
+This is the complete code combining all the individual pieces of codes. It is recommended to first test each code component separately, and only when you are sure that you are getting the desired results, you should run the code as a whole.
