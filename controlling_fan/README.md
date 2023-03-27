@@ -80,3 +80,7 @@ while True:
 ```
 
 This script uses two functions to toggle each of the relays, and a simple loop to prompt the user for input to toggle a relay or quit the program.
+
+For more details on how the relays work, you can go through this article written by RandomNerdTutorials:
+
+https://randomnerdtutorials.com/guide-for-relay-module-with-arduino/
