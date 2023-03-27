@@ -10,21 +10,20 @@ Materials needed:
 -	Two devices to control (must be rated for 12V and should not draw more current than the relay module can handle)
 
 ### Step 1: Connect the power supply to the relay module
--	Connect the positive terminal of the power supply to the "VCC" pin on the relay module
--	Connect the negative terminal of the power supply to the "GND" pin on the relay module
+-	Connect the positive terminal of the power supply to the "COM" pin on the relay module
+-	Connect the negative terminal of the power supply to the negative terminal of each device
 
 ### Step 2: Connect the relay module to the Raspberry Pi
 -	Connect one of the relay module's control pins ("IN1" or "IN2") to a GPIO pin on the Raspberry Pi (e.g. GPIO17)
 -	Connect the relay module's other control pin to another GPIO pin on the Raspberry Pi (e.g. GPIO18)
 -	Connect the "GND" pin on the relay module to any available ground pin on the Raspberry Pi
+-	Connect the "VCC" pin on the relay module to 5V pin on Raspberry Pi
 
 ### Step 3: Connect the devices to the relay module
--	Connect one of the devices to the relay module's "NO" (normally open) terminal for channel 1
+-	Connect the positive terminal of one of the devices to the relay module's "NO" (normally open) terminal for channel 1
 -	Connect the other device to the relay module's "NO" (normally open) terminal for channel 2
--	Connect the negative terminal of each device to the "GND" pin on the relay module
 
 ### Step 4: Install the necessary software on the Raspberry Pi
--	Install the RPi.GPIO library by running the command "sudo apt-get install python-rpi.gpio" in the terminal
 -	Create a new Python script using your preferred text editor (e.g. "nano relay_control.py")
 
 ### Step 5: Write the Python script to control the relays Here's an example script that you can modify to suit your needs:
