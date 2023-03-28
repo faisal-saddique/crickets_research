@@ -4,7 +4,7 @@ import numpy as np
 
 
 class SHT3x:
-    def __init__(self, i2c_addr=0x44, i2c_bus=1):
+    def __init__(self, i2c_addr=0x45, i2c_bus=1):
         self.i2c_addr = i2c_addr
         self.i2c_bus = i2c_bus
         self.bus = smbus.SMBus(self.i2c_bus)

@@ -12,7 +12,7 @@ b = -0.1932  # Enter calculated intercept
 Ro = 20  # Enter found Ro value from measure_ro.py after running it for 10 hours
 
 i2c = busio.I2C(board.SCL, board.SDA)
-ads = ADS.ADS1115(i2c)
+ads = ADS.ADS1115(i2c, 0x34)
 chan = AnalogIn(ads, ADS.P0)
 
 while True:
