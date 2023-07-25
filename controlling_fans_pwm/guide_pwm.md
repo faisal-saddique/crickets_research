@@ -1,3 +1,5 @@
+## Control Multiple PWM fans using Raspberry Pi
+
 If you want to control the speed of all fans at the same time (synchronized control), you can use a PWM splitter or PWM hub (eg. https://www.amazon.com/PWM-Fan-Splitter-Way/dp/B095HDK93L). These devices take a single PWM signal and distribute it to multiple fans, allowing you to control all of them together.
 
 Here's how you can achieve that:
